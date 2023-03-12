@@ -20,4 +20,3 @@ let fb = (n) => {
 playBtn.addEventListener('click', (event) => {
     label.textContent = fb(num.value);
 })
-
