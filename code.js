@@ -1,5 +1,6 @@
 const num = document.getElementById('num');
 const playBtn = document.getElementById('play-btn');
+const label = document.getElementById('lb');
 
 let fb = (n) => {
     let text = "";
@@ -9,7 +10,14 @@ let fb = (n) => {
         : i % 5 == 0 ? "Buzz" 
         : i % 3 == 0 && i % 5 == 0 ? "Fizz Buzz"
         : i;
-    }
 
-    return text.split(" ");
+        text+= " ";
+    }   
+
+    return text
 }
+
+playBtn.addEventListener('click', (event) => {
+    label.textContent = fb(num.value);
+})
+

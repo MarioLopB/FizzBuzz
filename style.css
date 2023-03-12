@@ -71,9 +71,12 @@ body, html {
     height: 100px;
 }
 
-label {
+#lb {
+    align-self: center;
     width: 300px;
     height: 20px;
-    color: blueviolet;
+    color: red;
     margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
 }
